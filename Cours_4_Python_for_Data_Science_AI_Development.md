@@ -33,9 +33,6 @@ else:
 print("move on")
 ```
 
- 
-
-
 
 ##### Logical operators: not, Or, And
 
@@ -96,6 +93,26 @@ while(year != 1973):
     i = i + 1
     year = dates[i]
     ```
+```js
+PlayListRatings = [10, 9.5, 10, 8, 7.5, 5, 10, 10]
+i = 0
+Rating = PlayListRatings[0]
+while(i < len(PlayListRatings) and Rating >= 6):
+    Rating = PlayListRatings[i]
+    print(Rating)
+    i = i + 1
+    ```
+ Write a while loop to copy the strings 'orange' of the list squares to the list new_squares. Stop and exit the loop if the value on the list is not 'orange'
+    
+ ```js 
+ squares = ['orange', 'orange', 'purple', 'blue ', 'orange']
+new_squares = []
+i = 0
+while(i < len(squares) and squares[i] == 'orange'):
+    new_squares.append(squares[i])
+    i = i + 1
+print (new_squares)
+```
 
 
 
