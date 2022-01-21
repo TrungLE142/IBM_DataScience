@@ -20,6 +20,7 @@ Note: Upper Case Letters have different ASCII code than Lower Case Letters, whic
 
 ```js 
 # example
+# Output:go see Pink Floyd    move on
 age = 18
 
 if age > 18:
@@ -31,9 +32,9 @@ else:
     
 print("move on")
 ```
-Output: 
-go see Pink Floyd
-move on
+ 
+
+
 
 ##### Logical operators: not, Or, And
 
