@@ -93,6 +93,7 @@ while(year != 1973):
     i = i + 1
     year = dates[i]
 ```
+Write a while loop to display the values of the Rating of an album playlist stored in the list PlayListRatings. If the score is less than 6, exit the loop
 ```js
 PlayListRatings = [10, 9.5, 10, 8, 7.5, 5, 10, 10]
 i = 0
@@ -101,7 +102,7 @@ while(i < len(PlayListRatings) and Rating >= 6):
     Rating = PlayListRatings[i]
     print(Rating)
     i = i + 1
-    ```
+ ```
  Write a while loop to copy the strings 'orange' of the list squares to the list new_squares. Stop and exit the loop if the value on the list is not 'orange'
     
  ```js 
