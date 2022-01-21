@@ -38,10 +38,10 @@ print("move on")
 
 
 ### Part 2: Loops
-##### Range¶
+#### Range
 It is helpful to think of the range object as an ordered list
 
-##### For
+#### For
 The for loop enables you to execute a code block multiple times.
 ```js 
 # For loop example
@@ -76,7 +76,7 @@ squares=['red', 'yellow', 'green', 'purple', 'blue']
 for i, square in enumerate(squares):
     print(i, square)
 ```
-### While
+#### While
 With for, we dont know when we want to stop the loop. With While, we use a condition to stop our program. The code block will keep being executed until the given logical condition returns a False boolean value.
 
 A while loop iterates merely until the condition year != 1973 is not met
