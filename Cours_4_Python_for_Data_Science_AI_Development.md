@@ -38,3 +38,19 @@ print("move on")
 
 ##### Logical operators: not, Or, And
 
+
+### Part 2: Loops
+##### Range¶
+It is helpful to think of the range object as an ordered list
+
+##### For
+The for loop enables you to execute a code block multiple times.
+```js 
+# For loop example
+dates = [1982,1980,1973]
+N = len(dates)
+
+for i in range(N):
+    print(dates[i])
+```
+This code block will return 1982 1980 1973
