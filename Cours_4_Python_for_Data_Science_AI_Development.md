@@ -3,8 +3,8 @@
 ## Week2: Python Data Structures
 ## Week3:Python Programming Fundamentals
 ### Part 1:Conditions and Branching
-#####Condition Statements
-###### inequality and equality operator
+##### Condition Statements
+###### Inequality and equality operator
 We can apply the inequality and equality operator on strings, interger, numeric...
 ```js
 #Output False
@@ -34,3 +34,6 @@ print("move on")
 Output: 
 go see Pink Floyd
 move on
+
+##### Logical operators: not, Or, And
+
