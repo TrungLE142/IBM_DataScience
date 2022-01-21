@@ -32,6 +32,7 @@ else:
     
 print("move on")
 ```
+
  
 
 
@@ -54,3 +55,47 @@ for i in range(N):
     print(dates[i])
 ```
 This code block will return 1982 1980 1973
+
+In Python we can directly access the elements in the list as follows:
+```js
+for year in dates:  
+    print(year)   
+```
+We can change the elements in a list:
+```js
+# Use for loop to change the elements in list
+squares = ['red', 'yellow', 'green', 'purple', 'blue']
+
+for i in range(0, 5):
+    print("Before square ", i, 'is',  squares[i])
+    squares[i] = 'white'
+    print("After square ", i, 'is',  squares[i])
+```
+We can access the index and the elements of a list as follows:
+```js
+# Loop through the list and iterate on both index and element value
+squares=['red', 'yellow', 'green', 'purple', 'blue']
+
+for i, square in enumerate(squares):
+    print(i, square)
+```
+### While
+With for, we dont know when we want to stop the loop. With While, we use a condition to stop our program. The code block will keep being executed until the given logical condition returns a False boolean value.
+
+A while loop iterates merely until the condition year != 1973 is not met
+```js 
+# While Loop Example
+
+dates = [1982, 1980, 1973, 2000]
+
+i = 0
+year = dates[0]
+
+while(year != 1973):    
+    print(year)
+    i = i + 1
+    year = dates[i]
+    ```
+
+
+
