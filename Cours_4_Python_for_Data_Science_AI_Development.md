@@ -92,7 +92,7 @@ while(year != 1973):
     print(year)
     i = i + 1
     year = dates[i]
-    ```
+```
 ```js
 PlayListRatings = [10, 9.5, 10, 8, 7.5, 5, 10, 10]
 i = 0
