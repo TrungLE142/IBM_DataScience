@@ -199,5 +199,9 @@ l2 = [5,6,7,8]
 con(l1,l2)
 # output: [1, 2, 3, 4, 5, 6, 7, 8]
 ```
+### Exception Handling
 
-
+Some exemples for ErrorException
+- 1/0 => ZeroDivisionError occurs when you try to divide by zero.
+- y = a + 5 => NameError: it means that you tried to use the variable a when it was not defined.
+-  a = [1, 2, 3]   a[10]   => IndexError: it occured because you tried to access data from a list using an index that does not exist for this list.
