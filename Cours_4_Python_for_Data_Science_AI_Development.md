@@ -287,7 +287,7 @@ class Circle(object):
         plt.axis('scaled')
         plt.show()  
 ```
-    Creating an instance of a class Circle
+Creating an instance of a class Circle
 ```js
     # Create an object RedCircle
     RedCircle = Circle(10, 'red')
