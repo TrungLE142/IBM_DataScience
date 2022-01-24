@@ -309,9 +309,8 @@ class Circle(object):
     # Call the method drawCircle
     RedCircle.drawCircle()
 ```
-    
-    ### Exercises for this chapiter
-    Create a classe 'analysedText' that can perform analysis on a given piece of text. Complete this class with the following methods 
+### Exercises for this chapiter
+Create a classe 'analysedText' that can perform analysis on a given piece of text. Complete this class with the following methods 
 
 - Constructor - Takes argument 'text',makes it lower case and removes all punctuation. Assume only the following punctuation is used - period (.), exclamation mark (!), comma (,) and question mark (?). Store the argument in "fmtText"
 - freqAll - returns a dictionary of all unique words in the text along with the number of their occurences.
