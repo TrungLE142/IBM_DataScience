@@ -114,6 +114,56 @@ while(i < len(squares) and squares[i] == 'orange'):
     i = i + 1
 print (new_squares)
 ```
+### Part 3: Functions in Python
+A function is a reusable block of code which performs operations specified in the function
 
+```js
+# Define a function for multiple two numbers
+
+def Mult(a, b):
+    c = a * b
+    return(c)
+    
+result = Mult(12,2)
+print(result)
+
+# Use mult() multiply two floats
+Mult(10.0, 3.14)
+
+# Use mult() multiply two different type values together
+Mult(2, "Michael Jackson ")
+```
+
+If there is no return statement, the function returns None.
+```js
+# Define functions, one with return value None and other without return value
+
+def MJ():
+    print('Michael Jackson')
+    
+def MJ1():
+    print('Michael Jackson')
+    return(None)
+```
+#### Default argument values
+
+```js 
+# Example for setting param with default value
+
+def isGoodRating(rating=4): 
+    if(rating < 7):
+        print("this album sucks it's rating is",rating)
+        
+    else:
+        print("this album is good its rating is",rating)
+```
+```js 
+# Test the value with default value and with input
+
+isGoodRating()
+isGoodRating(10)
+#this album sucks it's rating is 4
+#this album is good its rating is 10
+```
 
 
