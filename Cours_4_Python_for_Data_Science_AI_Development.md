@@ -264,3 +264,86 @@ else:
 finally:
     print("Processing Complete")
 ```
+
+### Part 5: Classes and Objects in Python
+
+```js
+# Create a class Circle
+class Circle(object):
+    
+    # Constructor
+    def __init__(self, radius=3, color='blue'):
+        self.radius = radius
+        self.color = color 
+    
+    # Method
+    def add_radius(self, r):
+        self.radius = self.radius + r
+        return(self.radius)
+    
+    # Method
+    def drawCircle(self):
+        plt.gca().add_patch(plt.Circle((0, 0), radius=self.radius, fc=self.color))
+        plt.axis('scaled')
+        plt.show()  
+    ```
+    Creating an instance of a class Circle
+    ```js
+    # Create an object RedCircle
+    RedCircle = Circle(10, 'red')
+    # affiche la value radius
+    RedCircle.radius
+    #affiche la value color
+    RedCircle.color
+    
+    #We can change the object's data attributes:
+    # Set the object attribute radius
+    RedCircle.radius = 1
+    
+    # Use method to change the object attribute radius
+
+    print('Radius of object:',RedCircle.radius)
+    RedCircle.add_radius(2)
+    print('Radius of object of after applying the method add_radius(2):',RedCircle.radius)
+    
+    # Call the method drawCircle
+    RedCircle.drawCircle()
+    ```
+    
+    ### Exercises for this chapiter
+    Create a classe 'analysedText' that can perform analysis on a given piece of text. Complete this class with the following methods 
+
+- Constructor - Takes argument 'text',makes it lower case and removes all punctuation. Assume only the following punctuation is used - period (.), exclamation mark (!), comma (,) and question mark (?). Store the argument in "fmtText"
+- freqAll - returns a dictionary of all unique words in the text along with the number of their occurences.
+- freqOf - returns the frequency of the word passed in argument.
+
+```js
+class analysedText(object):
+    
+    def __init__ (self, text):
+        # remove punctuation
+        text1 = text.replace('.' , '').replace('!' , '').replace(',' , '').replace('?' , '')
+        # convert into lowercase
+        self.fmtText = text1.lower()
+        
+    def freqAll(self):        
+        new_dict= {}
+        # split text into words to create a new list with this words
+        new_list = self.fmtText.split(' ')
+        # convert this new_list into new_set to remove the duplicate
+        new_set = set(new_list)
+        # use loop for to read each element in set and add them into the new dictionary with their numbers of apperances.
+        for word in new_set :
+            new_dict[word] = new_list.count(word)
+        return new_dict
+    
+    def freqOf(self,word):
+        # split text into words to create a new list with this words
+        list = self.fmtText.split(' ')
+        # variable to take the nb of occurence.
+        freqword = 0
+        for i in list:
+            if i == word:
+                freqword = list.count(i)
+        return freqword    
+```
