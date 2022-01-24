@@ -199,7 +199,7 @@ l2 = [5,6,7,8]
 con(l1,l2)
 # output: [1, 2, 3, 4, 5, 6, 7, 8]
 ```
-### Exception Handling
+### Part 4:Exception Handling
 
 Some exemples for ErrorException
 - 1/0 => ZeroDivisionError occurs when you try to divide by zero.
