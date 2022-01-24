@@ -286,9 +286,9 @@ class Circle(object):
         plt.gca().add_patch(plt.Circle((0, 0), radius=self.radius, fc=self.color))
         plt.axis('scaled')
         plt.show()  
-    ```
+```
     Creating an instance of a class Circle
-    ```js
+```js
     # Create an object RedCircle
     RedCircle = Circle(10, 'red')
     # affiche la value radius
@@ -308,7 +308,7 @@ class Circle(object):
     
     # Call the method drawCircle
     RedCircle.drawCircle()
-    ```
+```
     
     ### Exercises for this chapiter
     Create a classe 'analysedText' that can perform analysis on a given piece of text. Complete this class with the following methods 
