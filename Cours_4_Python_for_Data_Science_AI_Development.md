@@ -166,4 +166,38 @@ isGoodRating(10)
 #this album is good its rating is 10
 ```
 
+When the number of arguments are unknown for a function, They can all be packed into a tuple:
+```js 
+def printAll(*args): # All the arguments are 'packed' into args which can be treated like a tuple
+    print("No of arguments:", len(args)) 
+    for argument in args:
+        print(argument)
+#printAll with 3 arguments
+printAll('Horsefeather','Adonis','Bone')
+#printAll with 4 arguments
+printAll('Sidecar','Long Island','Mudslide','Carriage')
+```
+
+The arguments can also be packed into a dictionary as shown:
+```js
+def printDictionary(**args):
+    for key in args:
+        print(key + " : " + args[key])
+
+printDictionary(Country='Canada',Province='Ontario',City='Toronto')
+```
+Output 
+Country : Canada
+Province : Ontario
+City : Toronto
+
+Can the function be used to concatenate lists or tuples?
+```js
+# Write your code below and press Shift+Enter to execute
+l1= [1,2,3,4]
+l2 = [5,6,7,8]
+con(l1,l2)
+# output: [1, 2, 3, 4, 5, 6, 7, 8]
+```
+
 
