@@ -204,4 +204,63 @@ con(l1,l2)
 Some exemples for ErrorException
 - 1/0 => ZeroDivisionError occurs when you try to divide by zero.
 - y = a + 5 => NameError: it means that you tried to use the variable a when it was not defined.
--  a = [1, 2, 3]   a[10]   => IndexError: it occured because you tried to access data from a list using an index that does not exist for this list.
+-  a = [1, 2, 3]   then  a[10]   => IndexError: it occured because you tried to access data from a list using an index that does not exist for this list.
+
+#### Try Except
+```js
+# potential code before try catch
+try:
+    # code to try to execute
+except:
+    # code to execute if there is an exception
+    
+# code that will still execute if there is an exception
+```
+Exemple: 
+```js
+a = 1
+
+try:
+    b = int(input("Please enter a number to divide a"))
+    a = a/b
+    print("Success a=",a)
+except:
+    print("There was an error")
+```
+If the input b is 0, the exception will be raised => "There was an error"
+When  b= 2 , we obtain Success a = 0.5
+
+#### Try Except Specific Example
+We can define the excepts specific for the different cases
+```js
+a = 1
+
+try:
+    b = int(input("Please enter a number to divide a"))
+    a = a/b
+    print("Success a=",a)
+except ZeroDivisionError:
+    print("The number you provided cant divide 1 because it is 0")
+except ValueError:
+    print("You did not provide a number")
+except:
+    print("Something went wrong")
+```
+"finally" allows us to always execute something even if there is an exception or not. This is usually used to signify the end of the try except.
+```js
+a = 1
+
+try:
+    b = int(input("Please enter a number to divide a"))
+    a = a/b
+except ZeroDivisionError:
+    print("The number you provided cant divide 1 because it is 0")
+except ValueError:
+    print("You did not provide a number")
+except:
+    print("Something went wrong")
+else:
+    print("success a=",a)
+finally:
+    print("Processing Complete")
+```
