@@ -346,3 +346,95 @@ class analysedText(object):
                 freqword = list.count(i)
         return freqword    
 ```
+
+### Week 4: 
+
+####  Part1: Reading & Writing Files with Open
+##### Read files
+Open a File using With
+Using the with statement is better practice, it automatically closes the file even if the code encounters an exception.
+```js 
+# Open file by using with
+with open(example1, "r") as file1:
+    FileContent = file1.read()
+    print(FileContent)
+```
+We don’t have to read the entire file, for example, we can read the first 4 characters by entering three as a parameter to the method .read():
+```js
+# Read first four characters
+with open(example1, "r") as file1:
+    print(file1.read(4))
+```
+We can read a entire line by readline()
+```js
+# Read one line
+
+with open(example1, "r") as file1:
+    print("first line: " + file1.readline())
+```
+
+We can use a loop to iterate through each line:
+```js
+# Iterate through the lines
+with open(example1,"r") as file1:
+        i = 0;
+        for line in file1:
+            print("Iteration", str(i), ": ", line)
+            i = i + 1
+```
+We can use the method readlines() to save the text file to a list:
+```js
+# Read all lines and save as a list
+
+with open(example1, "r") as file1:
+    FileasList = file1.readlines()
+```
+##### Write files
+```js
+# Write line to file
+exmp2 = '/resources/data/Example2.txt'
+with open(exmp2, 'w') as writefile:
+    writefile.write("This is line A")
+# Write lines to file
+
+with open(exmp2, 'w') as writefile:
+    writefile.write("This is line A\n")
+    writefile.write("This is line B\n")
+```
+```js
+#list of text
+lines = ["This is line A\n", "This is line B\n", "This is line C\n"]
+# Write the strings in the list to text file
+
+with open('Example2.txt', 'w') as writefile:
+    for line in Lines:
+        print(line)
+        writefile.write(line)
+```
+Attention: note that setting the mode to w **overwrites** all the existing data in the file.
+```js
+with open('Example2.txt', 'w') as writefile:
+    writefile.write("Overwrite\n")
+```
+Now, the content of example 2 is only "Overwrite"
+
+###### Appending Files
+We can write to files without losing any of the existing data as follows by setting the mode argument to append: a.
+```js
+with open('Example2.txt', 'a') as testwritefile:
+    testwritefile.write("This is line C\n")
+    testwritefile.write("This is line D\n")
+    testwritefile.write("This is line E\n")
+```
+###### Copy a File
+```js
+# Copy file to another
+
+with open('Example2.txt','r') as readfile:
+    with open('Example3.txt','w') as writefile:
+          for line in readfile:
+                writefile.write(line)
+```
+```js
+```
+
