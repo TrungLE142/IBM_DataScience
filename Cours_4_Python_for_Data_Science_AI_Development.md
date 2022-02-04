@@ -435,6 +435,22 @@ with open('Example2.txt','r') as readfile:
           for line in readfile:
                 writefile.write(line)
 ```
-```js
-```
 
+#### Part 2: Pandas
+Firstly, we have to import library Pandas
+```js
+import pandas as pd
+```
+We use the path of the excel file and the function "read_excel" to get a data frame from this file
+```js
+xlsx_path = 'url'
+
+df = pd.read_excel(xlsx_path)
+df.head()
+```
+To access to a column 'X'
+```js
+x = df[['X']]
+```
+##### Viewing Data and Accessing Data
+If we use one bracket to get the column 'X' 
