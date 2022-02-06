@@ -453,4 +453,29 @@ To access to a column 'X'
 x = df[['X']]
 ```
 ##### Viewing Data and Accessing Data
-If we use one bracket to get the column 'X' 
+If we use one bracket to get the column 'X', we will get a column as a series
+```js
+x = df['X']
+```
+We can also get a column or multiple columns as a dataframe
+```js
+x = df[['X']]
+
+y = df[['X','Y','Z']]
+```
+to access unique elements we use  the iloc method, where we can access the 1st row and the 1st column as follows:
+```js
+df.iloc[0 , 0]
+df.iloc[0, 1]
+df.iloc[1, 2]
+```
+We can perform slicing using both the index and the name of the column
+```js
+#Example
+# using index
+df.iloc[0:2, 0:3]
+# using name
+df.loc[0:2, 'Artist':'Released']
+```
+
+
